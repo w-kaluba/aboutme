@@ -14,40 +14,40 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Wiza Kaluba
         </h1>
+        <p className={styles.tagline}>I write code that solves problems.</p>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
+          Cloud Native ones. DevOps ones. Embedded ones. Web3 ones. If there's a problem, I'll probably try and solve it.
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="https://github.com/w-kaluba" className={styles.card}>
+            <h2>Github &rarr;</h2>
+            <p>Look at the problems I've solved recently.</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <a href="wizhttps://uk.linkedin.com/in/wiza-kaluba" className={styles.card}>
+            <h2>LinkedIn &rarr;</h2>
+            <p>Look at the people who have given me problems to solve.</p>
           </a>
 
           <a
             href="https://github.com/vercel/next.js/tree/canary/examples"
             className={styles.card}
           >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            <h2>Blog &rarr;</h2>
+            <p>Read about how I solve problems.</p>
           </a>
 
           <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="/contactme"
             className={styles.card}
           >
-            <h2>Deploy &rarr;</h2>
+            <h2>Contact Me &rarr;</h2>W
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Give me a problem to solve.
             </p>
           </a>
         </div>
