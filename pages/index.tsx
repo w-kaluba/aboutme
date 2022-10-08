@@ -1,7 +1,9 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import WorkPicture1 from "../public/WorkPicture1.jpg";
+import WorkPicture2 from "../public/WorkPicture2.jpg";
 
 const Home: NextPage = () => {
   return (
@@ -13,14 +15,16 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Wiza Kaluba
-        </h1>
-        <p className={styles.tagline}>I write code that solves problems.</p>
+        <div className={styles.header}>
+          <h1 className={styles.title}>Wiza Kaluba</h1>
+          <p className={styles.tagline}>I write code that solves problems.</p>
+        </div>
 
         <p className={styles.description}>
-          Cloud Native ones. DevOps ones. Embedded ones. Web3 ones. If there's a problem, I'll probably try and solve it.
+          Cloud Native ones. DevOps ones. Embedded ones. Web3 ones. If there's a
+          problem, I'll probably try and solve it.
         </p>
+        <Image src={WorkPicture2} alt="Picture of Wiza Kaluba writing code" />
 
         <div className={styles.grid}>
           <a href="https://github.com/w-kaluba" className={styles.card}>
@@ -28,7 +32,10 @@ const Home: NextPage = () => {
             <p>Look at the problems I've solved recently.</p>
           </a>
 
-          <a href="wizhttps://uk.linkedin.com/in/wiza-kaluba" className={styles.card}>
+          <a
+            href="https://uk.linkedin.com/in/wiza-kaluba"
+            className={styles.card}
+          >
             <h2>LinkedIn &rarr;</h2>
             <p>Look at the people who have given me problems to solve.</p>
           </a>
@@ -41,32 +48,14 @@ const Home: NextPage = () => {
             <p>Read about how I solve problems.</p>
           </a>
 
-          <a
-            href="/contactme"
-            className={styles.card}
-          >
-            <h2>Contact Me &rarr;</h2>W
-            <p>
-              Give me a problem to solve.
-            </p>
+          <a href="/contactme" className={styles.card}>
+            <h2>Contact Me &rarr;</h2>
+            <p>Give me a problem to solve.</p>
           </a>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
