@@ -22,7 +22,7 @@ const Home: NextPage = () => {
 
         <p className={styles.description}>
           Cloud Native ones. DevOps ones. Embedded ones. Web3 ones. If there's a
-          problem, I'll probably try and solve it.
+          problem, then there won't be.
         </p>
         <Image src={WorkPicture2} alt="Picture of Wiza Kaluba writing code" />
 
@@ -41,7 +41,7 @@ const Home: NextPage = () => {
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
+            href="https://medium.com/@wizakaluba"
             className={styles.card}
           >
             <h2>Blog &rarr;</h2>
